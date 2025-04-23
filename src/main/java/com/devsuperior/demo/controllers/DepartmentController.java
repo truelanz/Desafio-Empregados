@@ -18,7 +18,7 @@ public class DepartmentController {
     @Autowired
     private DepartmentService departmentService;
 
-    // buscar por páginação
+    // find all por List
     @GetMapping
     public ResponseEntity<List<DepartmentDTO>> findAll() {
         List<DepartmentDTO> list = departmentService.findAll();
